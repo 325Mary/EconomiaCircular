@@ -1,0 +1,144 @@
+﻿<header class="header-main">
+    <div class="header-container">
+        <div class="header-content">
+            <!-- Logo -->
+            <a href="/" class="header-brand">
+                <div class="header-logo">
+                    <span class="header-logo-letter">A</span>
+                </div>
+                <div class="header-brand-text">
+                    <div class="header-brand-name">AMVA</div>
+                    <div class="header-brand-subtitle">Economía Circular</div>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="header-nav-desktop">
+                <!-- Inicio -->
+                <a href="/" class="nav-link">Inicio</a>
+
+                <!-- Hoja de Ruta -->
+                <a href="/HojaDeRuta" class="nav-link">Hoja de Ruta</a>
+
+                <!-- Acompañamientos (Dropdown) -->
+                <div class="nav-dropdown">
+                    <button class="nav-link nav-dropdown-trigger">
+                        Acompañamientos
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="/acompanamientos#ec" class="nav-dropdown-item">Economía Circular</a>
+                        <a href="/acompanamientos#compras" class="nav-dropdown-item">Compras Sostenibles</a>
+                        <a href="/acompanamientos#energia" class="nav-dropdown-item">Eficiencia Energética</a>
+                        <a href="/acompanamientos#hidrica" class="nav-dropdown-item">Gestión Hídrica</a>
+                        <a href="/acompanamientos#construccion" class="nav-dropdown-item">Construcción Sostenible</a>
+                    </div>
+                </div>
+
+                <!-- Sectores (Dropdown) -->
+                <div class="nav-dropdown">
+                    <button class="nav-link nav-dropdown-trigger">
+                        Sectores
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="/sectores#industria" class="nav-dropdown-item">Industria</a>
+                        <a href="/sectores#construccion" class="nav-dropdown-item">Construcción</a>
+                        <a href="/sectores#comercio" class="nav-dropdown-item">Comercio y Servicios</a>
+                        <a href="/sectores#habitante" class="nav-dropdown-item">Habitante Metropolitano</a>
+                    </div>
+                </div>
+
+                <!-- Indicadores -->
+                <a href="/indicadores" class="nav-link">Indicadores</a>
+
+                <!-- Normativa -->
+                <a href="/normativa" class="nav-link">Normativa</a>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="header-actions-desktop">
+                <button class="header-icon-btn" aria-label="Buscar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="header-lang-btn">ES</button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="header-mobile-toggle" id="mobile-menu-toggle" aria-label="Menú">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <span class="mobile-menu-title">Menú</span>
+            <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Cerrar menú">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="/" class="mobile-nav-link">Inicio</a>
+            <a href="/HojaDeRuta" class="mobile-nav-link">Hoja de Ruta</a>
+
+            <!-- Acompañamientos Mobile -->
+            <div class="mobile-nav-section">
+                <button class="mobile-nav-link mobile-nav-toggle">
+                    Acompañamientos
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mobile-chevron">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="mobile-nav-submenu">
+                    <a href="/acompanamientos#ec" class="mobile-nav-sublink">Economía Circular</a>
+                    <a href="/acompanamientos#compras" class="mobile-nav-sublink">Compras Sostenibles</a>
+                    <a href="/acompanamientos#energia" class="mobile-nav-sublink">Eficiencia Energética</a>
+                    <a href="/acompanamientos#hidrica" class="mobile-nav-sublink">Gestión Hídrica</a>
+                    <a href="/acompanamientos#construccion" class="mobile-nav-sublink">Construcción Sostenible</a>
+                </div>
+            </div>
+
+            <!-- Sectores Mobile -->
+            <div class="mobile-nav-section">
+                <button class="mobile-nav-link mobile-nav-toggle">
+                    Sectores
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mobile-chevron">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="mobile-nav-submenu">
+                    <a href="/sectores#industria" class="mobile-nav-sublink">Industria</a>
+                    <a href="/sectores#construccion" class="mobile-nav-sublink">Construcción</a>
+                    <a href="/sectores#comercio" class="mobile-nav-sublink">Comercio y Servicios</a>
+                    <a href="/sectores#habitante" class="mobile-nav-sublink">Habitante Metropolitano</a>
+                </div>
+            </div>
+
+            <a href="/indicadores" class="mobile-nav-link">Indicadores</a>
+            <a href="/normativa" class="mobile-nav-link">Normativa</a>
+            <a href="/herramientas" class="mobile-nav-link">Herramientas</a>
+            <a href="/casos-exito" class="mobile-nav-link">Casos de Éxito</a>
+            <a href="/noticias" class="mobile-nav-link">Noticias</a>
+            <a href="/contacto" class="mobile-nav-link">Contacto</a>
+        </nav>
+    </div>
+</header>

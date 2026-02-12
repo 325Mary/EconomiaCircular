@@ -1,0 +1,375 @@
+﻿/* ============================================
+   HOJA DE RUTA PAGE STYLES
+   Exactamente igual al diseño React con Tailwind
+   ============================================ */
+
+/* Hero Section - Hoja de Ruta */
+.hero-hoja-ruta {
+	background: linear-gradient(to right, rgb(22, 163, 74), rgb(21, 128, 61));
+	color: white;
+	padding: 4rem 0;
+}
+
+.breadcrumb {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	margin-bottom: 1rem;
+}
+
+	.breadcrumb svg {
+		width: 1rem;
+		height: 1rem;
+	}
+
+.hero-title-ruta {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.hero-subtitle-ruta {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	max-width: 48rem;
+}
+
+@media (min-width: 768px) {
+	.hero-title-ruta {
+		font-size: 3rem;
+		line-height: 1;
+	}
+}
+
+/* Visión Section */
+.vision-header {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.vision-text {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	color: rgb(75, 85, 99);
+	max-width: 56rem;
+	margin: 0 auto;
+}
+
+/* Timeline */
+.timeline-container {
+	position: relative;
+	padding: 2rem 0;
+}
+
+.timeline-line {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	width: 4px;
+	background-color: rgb(187, 247, 208);
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.timeline-items {
+	position: relative;
+	z-index: 2;
+}
+
+.timeline-item {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	gap: 0;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+
+	.timeline-item:last-child {
+		margin-bottom: 0;
+	}
+
+/* Items a la izquierda (índice par: 0, 2, 4...) */
+.timeline-item-left .timeline-content {
+	grid-column: 1;
+	padding-right: 2rem;
+}
+
+	.timeline-item-left .timeline-content .card {
+		text-align: right;
+	}
+
+.timeline-item-left .timeline-dot {
+	grid-column: 2;
+}
+
+.timeline-item-left .timeline-space {
+	grid-column: 3;
+}
+
+/* Items a la derecha (índice impar: 1, 3, 5...) */
+.timeline-item-right .timeline-space {
+	grid-column: 1;
+}
+
+.timeline-item-right .timeline-dot {
+	grid-column: 2;
+}
+
+.timeline-item-right .timeline-content {
+	grid-column: 3;
+	padding-left: 2rem;
+}
+
+	.timeline-item-right .timeline-content .card {
+		text-align: left;
+	}
+
+.timeline-dot {
+	width: 2rem;
+	height: 2rem;
+	background-color: rgb(22, 163, 74);
+	border-radius: 50%;
+	border: 4px solid white;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	z-index: 3;
+	position: relative;
+}
+
+.timeline-space {
+	/* Espacio vacío para el lado opuesto */
+}
+
+.timeline-year {
+	color: rgb(22, 163, 74);
+	font-weight: 600;
+	font-size: 1.125rem;
+	margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: rgb(17, 24, 39);
+}
+
+.timeline-description {
+	color: rgb(75, 85, 99);
+	font-size: 0.9375rem;
+	line-height: 1.5rem;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+	.timeline-line {
+		left: 1rem;
+	}
+
+	.timeline-item {
+		grid-template-columns: auto 1fr;
+		gap: 0;
+	}
+
+	.timeline-item-left .timeline-content,
+	.timeline-item-right .timeline-content {
+		grid-column: 2;
+		padding-left: 2rem;
+		padding-right: 0;
+	}
+
+		.timeline-item-left .timeline-content .card,
+		.timeline-item-right .timeline-content .card {
+			text-align: left;
+		}
+
+	.timeline-item-left .timeline-dot,
+	.timeline-item-right .timeline-dot {
+		grid-column: 1;
+	}
+
+	.timeline-item-left .timeline-space,
+	.timeline-item-right .timeline-space {
+		display: none;
+	}
+}
+
+/* Objetivos Estratégicos */
+.objetivos-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+}
+
+@media (min-width: 768px) {
+	.objetivos-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.objetivo-card {
+	text-align: center;
+	padding: 2rem;
+}
+
+.objetivo-icon {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 9999px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 1rem;
+}
+
+	.objetivo-icon.bg-green {
+		background-color: rgb(240, 253, 244);
+		color: rgb(22, 163, 74);
+	}
+
+	.objetivo-icon.bg-blue {
+		background-color: rgb(219, 234, 254);
+		color: rgb(37, 99, 235);
+	}
+
+	.objetivo-icon.bg-purple {
+		background-color: rgb(243, 232, 255);
+		color: rgb(147, 51, 234);
+	}
+
+.objetivo-title {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: rgb(17, 24, 39);
+}
+
+.objetivo-meta {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: rgb(22, 163, 74);
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+/* Líneas de Acción */
+.lineas-accion {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.linea-card {
+	padding: 1.5rem;
+}
+
+.linea-content {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+@media (min-width: 768px) {
+	.linea-content {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.linea-info {
+	flex: 1;
+}
+
+.linea-title {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: rgb(17, 24, 39);
+}
+
+.linea-description {
+	color: rgb(75, 85, 99);
+	margin-bottom: 0.5rem;
+}
+
+.linea-meta {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	color: rgb(107, 114, 128);
+}
+
+/* Documentos Descargables */
+.section-downloads {
+	padding: 4rem 0;
+	background-color: rgb(240, 253, 244);
+}
+
+.downloads-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+	.downloads-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.download-card {
+	text-align: center;
+	padding: 1.5rem;
+	transition: box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+	.download-card:hover {
+		box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	}
+
+.download-icon {
+	width: 3rem;
+	height: 3rem;
+	margin: 0 auto 1rem;
+}
+
+	.download-icon.text-green {
+		color: rgb(22, 163, 74);
+	}
+
+	.download-icon.text-blue {
+		color: rgb(37, 99, 235);
+	}
+
+	.download-icon.text-purple {
+		color: rgb(147, 51, 234);
+	}
+
+.download-title {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+	color: rgb(17, 24, 39);
+}
+
+.download-description {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	color: rgb(75, 85, 99);
+	margin-bottom: 1rem;
+}
+
+.download-btn {
+	width: 100%;
+}

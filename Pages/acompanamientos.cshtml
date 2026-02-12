@@ -1,0 +1,242 @@
+﻿@page
+@model AcompanamientosModel
+@{
+    ViewData["Title"] = "Programas de Acompañamiento";
+}
+
+<!-- Hero Section -->
+<section class="hero-acompanamientos">
+    <div class="container">
+        <div class="breadcrumb">
+            <span>Inicio</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span>Acompañamientos</span>
+        </div>
+        <h1 class="hero-title-acomp">Programas de Acompañamiento</h1>
+        <p class="hero-subtitle-acomp">Apoyo técnico especializado para la transición circular</p>
+    </div>
+</section>
+
+<!-- Programas Grid -->
+<section class="section-programas">
+    <div class="container">
+        <div class="programas-grid">
+
+            <!-- Programa 1: Economía Circular Empresarial -->
+            <div class="card programa-card">
+                <div class="programa-icon bg-green">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                        <path d="M9 22v-4h6v4"></path>
+                        <path d="M8 6h.01"></path>
+                        <path d="M16 6h.01"></path>
+                        <path d="M12 6h.01"></path>
+                        <path d="M12 10h.01"></path>
+                        <path d="M12 14h.01"></path>
+                        <path d="M16 10h.01"></path>
+                        <path d="M16 14h.01"></path>
+                        <path d="M8 10h.01"></path>
+                        <path d="M8 14h.01"></path>
+                    </svg>
+                </div>
+                <h3 class="programa-title">Economía Circular Empresarial</h3>
+                <p class="programa-description">Acompañamiento integral para empresas que buscan implementar modelos circulares</p>
+
+                <div class="requisitos-section">
+                    <h4 class="requisitos-title">Requisitos:</h4>
+                    <ul class="requisitos-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Empresa registrada en el AMVA</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Compromiso de implementación</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Equipo designado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-primary btn-full">Inscribirme al Programa</button>
+            </div>
+
+            <!-- Programa 2: Compras Públicas Sostenibles -->
+            <div class="card programa-card">
+                <div class="programa-icon bg-blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </div>
+                <h3 class="programa-title">Compras Públicas Sostenibles</h3>
+                <p class="programa-description">Apoyo a entidades públicas en la incorporación de criterios EC en adquisiciones</p>
+
+                <div class="requisitos-section">
+                    <h4 class="requisitos-title">Requisitos:</h4>
+                    <ul class="requisitos-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Entidad pública</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Plan de compras definido</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Presupuesto asignado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-primary btn-full">Inscribirme al Programa</button>
+            </div>
+
+            <!-- Programa 3: Eficiencia Energética -->
+            <div class="card programa-card">
+                <div class="programa-icon bg-yellow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                </div>
+                <h3 class="programa-title">Eficiencia Energética y Huella de Carbono</h3>
+                <p class="programa-description">Medición y reducción de emisiones con enfoque de economía circular</p>
+
+                <div class="requisitos-section">
+                    <h4 class="requisitos-title">Requisitos:</h4>
+                    <ul class="requisitos-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Consumos energéticos documentados</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Diagnóstico inicial</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Metas definidas</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-primary btn-full">Inscribirme al Programa</button>
+            </div>
+
+            <!-- Programa 4: Gestión Hídrica -->
+            <div class="card programa-card">
+                <div class="programa-icon bg-cyan">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="programa-title">Gestión Hídrica</h3>
+                <p class="programa-description">Optimización del uso del agua y tratamiento de aguas residuales</p>
+
+                <div class="requisitos-section">
+                    <h4 class="requisitos-title">Requisitos:</h4>
+                    <ul class="requisitos-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Consumos hídricos medidos</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Infraestructura base</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Plan de gestión</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-primary btn-full">Inscribirme al Programa</button>
+            </div>
+
+            <!-- Programa 5: Construcción Sostenible -->
+            <div class="card programa-card">
+                <div class="programa-icon bg-purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </div>
+                <h3 class="programa-title">Construcción Sostenible</h3>
+                <p class="programa-description">Asesoría en materiales circulares y diseño sostenible de edificaciones</p>
+
+                <div class="requisitos-section">
+                    <h4 class="requisitos-title">Requisitos:</h4>
+                    <ul class="requisitos-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Proyecto en fase de diseño</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Certificación ambiental objetivo</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Equipo técnico</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-primary btn-full">Inscribirme al Programa</button>
+            </div>
+
+            <!-- Programa 6: Atención a Usuarios -->
+            <div class="card programa-card">
+                <div class="programa-icon bg-orange">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <h3 class="programa-title">Atención a Usuarios (MRV, RUA-RESP)</h3>
+                <p class="programa-description">Orientación en trámites y reportes de economía circular</p>
+
+                <div class="requisitos-section">
+                    <h4 class="requisitos-title">Requisitos:</h4>
+                    <ul class="requisitos-list">
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Registro vigente</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Documentación actualizada</span>
+                        </li>
+                        <li>
+                            <span class="check-icon">✓</span>
+                            <span>Obligaciones al día</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn btn-primary btn-full">Inscribirme al Programa</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section-cta">
+    <div class="container cta-content">
+        <h2 class="cta-title">¿Necesitas más información?</h2>
+        <p class="cta-description">
+            Nuestro equipo está disponible para resolver tus dudas y guiarte en el proceso
+        </p>
+        <a href="/contacto" class="btn btn-primary btn-lg">Contactar Asesor</a>
+    </div>
+</section>

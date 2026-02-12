@@ -1,0 +1,199 @@
+﻿/* ============================================
+   SECTORES PAGE STYLES
+   Exactamente igual al diseño React con Tailwind
+   ============================================ */
+
+/* Hero Section */
+.hero-sectores {
+	background: linear-gradient(to right, rgb(79, 70, 229), rgb(67, 56, 202));
+	color: white;
+	padding: 3rem 0;
+}
+
+.hero-title-sectores {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.hero-subtitle-sectores {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+	.hero-title-sectores {
+		font-size: 3rem;
+		line-height: 1;
+	}
+}
+
+/* Sectores Section */
+.section-sectores {
+	padding: 4rem 0;
+	background-color: rgb(249, 250, 251);
+	min-height: 100vh;
+}
+
+/* Tabs List */
+.tabs-list {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0;
+	margin-bottom: 2rem;
+	background-color: rgb(243, 244, 246);
+	border-radius: 20.5rem;
+	padding: 0.25rem;
+}
+
+@media (min-width: 1024px) {
+	.tabs-list {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+/* Tab Trigger */
+.tab-trigger {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 0.75rem 1rem;
+	background-color: transparent;
+	border: none;
+	border-radius: 15.375rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	color: rgb(55, 65, 81);
+	font-weight: 500;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+	.tab-trigger:hover {
+		background-color: rgb(229, 231, 235);
+	}
+
+	.tab-trigger.active {
+		background-color: white;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	}
+
+.tab-icon {
+	width: 2rem;
+	height: 2rem;
+	flex-shrink: 0;
+}
+
+.tab-label {
+	display: none;
+}
+
+@media (min-width: 640px) {
+	.tab-label {
+		display: inline;
+	}
+}
+
+/* Tab Content */
+.tab-content {
+	display: none;
+}
+
+	.tab-content.active {
+		display: block;
+	}
+
+/* Sector Card */
+.sector-card {
+	padding: 2rem;
+}
+
+.sector-title {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	color: rgb(17, 24, 39);
+}
+
+.sector-description {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	color: rgb(75, 85, 99);
+	margin-bottom: 2rem;
+}
+
+/* Subsectores */
+.subsector-title {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: rgb(17, 24, 39);
+}
+
+.subsectores-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+	.subsectores-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.subsector-card {
+	background-color: rgb(249, 250, 251);
+	padding: 1rem;
+}
+
+.subsector-name {
+	font-weight: 600;
+	color: rgb(17, 24, 39);
+	margin: 0;
+}
+
+/* Sector Content - Prose styles */
+.sector-content {
+	max-width: none;
+}
+
+.content-title {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: rgb(17, 24, 39);
+}
+
+	.content-title:not(:first-child) {
+		margin-top: 2rem;
+	}
+
+.content-text {
+	color: rgb(75, 85, 99);
+	margin-bottom: 1rem;
+	line-height: 1.75;
+}
+
+.content-list {
+	list-style-type: disc;
+	padding-left: 1.5rem;
+	color: rgb(75, 85, 99);
+	margin: 0;
+}
+
+	.content-list li {
+		margin-bottom: 0.5rem;
+		line-height: 1.75;
+	}
+
+		.content-list li::marker {
+			color: rgb(75, 85, 99);
+		}
