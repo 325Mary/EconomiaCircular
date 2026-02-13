@@ -1,0 +1,238 @@
+﻿@page
+@model HojaDeRutaModel
+@{
+    ViewData["Title"] = "Hoja de Ruta de Economía Circular";
+}
+
+<!-- Hero -->
+<section class="hero-hoja-ruta">
+    <div class="container">
+        <div class="breadcrumb">
+            <span>Inicio</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span>Hoja de Ruta</span>
+        </div>
+        <h1 class="hero-title-ruta">Hoja de Ruta de Economía Circular</h1>
+        <p class="hero-subtitle-ruta">Estrategia Metropolitana hacia la Sostenibilidad 2040</p>
+    </div>
+</section>
+
+<!-- Visión 2040 -->
+<section class="section-white">
+    <div class="container">
+        <div class="vision-header">
+            <h2 class="section-title">Visión 2040</h2>
+            <p class="vision-text">
+                El Valle de Aburrá será una región metropolitana líder en Economía Circular,
+                donde los recursos se utilizan de manera eficiente, los residuos se minimizan
+                y la prosperidad económica se armoniza con la sostenibilidad ambiental.
+            </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="timeline-items">
+                <!-- Hito 1 -->
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="timeline-year">2025-2027</div>
+                            <h3 class="timeline-title">Fase de Implementación Inicial</h3>
+                            <p class="timeline-description">Establecimiento de programas piloto y primeros acompañamientos empresariales</p>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-space"></div>
+                </div>
+
+                <!-- Hito 2 -->
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-space"></div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="timeline-year">2028-2033</div>
+                            <h3 class="timeline-title">Fase de Consolidación</h3>
+                            <p class="timeline-description">Escalamiento de iniciativas exitosas y expansión territorial</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hito 3 -->
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+                        <div class="card">
+                            <div class="timeline-year">2034-2040</div>
+                            <h3 class="timeline-title">Fase de Madurez</h3>
+                            <p class="timeline-description">Sistema metropolitano de economía circular completamente operativo</p>
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-space"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Objetivos Estratégicos -->
+<section class="section-gray">
+    <div class="container">
+        <h2 class="section-title">Objetivos Estratégicos</h2>
+        <div class="objetivos-grid">
+            <!-- Objetivo 1 -->
+            <div class="card objetivo-card">
+                <div class="objetivo-icon bg-green">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                </div>
+                <h3 class="objetivo-title">Reducción de Residuos</h3>
+                <p class="objetivo-meta">50% para 2030</p>
+            </div>
+
+            <!-- Objetivo 2 -->
+            <div class="card objetivo-card">
+                <div class="objetivo-icon bg-blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                        <polyline points="16 7 22 7 22 13"></polyline>
+                    </svg>
+                </div>
+                <h3 class="objetivo-title">Aprovechamiento de Materiales</h3>
+                <p class="objetivo-meta">80% para 2035</p>
+            </div>
+
+            <!-- Objetivo 3 -->
+            <div class="card objetivo-card">
+                <div class="objetivo-icon bg-purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+                <h3 class="objetivo-title">Empleo Verde</h3>
+                <p class="objetivo-meta">10,000 puestos para 2040</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Líneas de Acción -->
+<section class="section-white">
+    <div class="container">
+        <h2 class="section-title">Líneas de Acción</h2>
+        <div class="lineas-accion">
+            <!-- Línea 1 -->
+            <div class="card linea-card">
+                <div class="linea-content">
+                    <div class="linea-info">
+                        <h3 class="linea-title">Gestión de Residuos y Materiales</h3>
+                        <p class="linea-description">Implementación de sistemas de recolección selectiva y valorización de residuos</p>
+                        <div class="linea-meta">
+                            <span>👤 Dirección Ambiental AMVA</span>
+                            <span>📅 2025-2030</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-dark">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Línea 2 -->
+            <div class="card linea-card">
+                <div class="linea-content">
+                    <div class="linea-info">
+                        <h3 class="linea-title">Innovación y Tecnología</h3>
+                        <p class="linea-description">Fomento de tecnologías limpias y modelos de negocio circulares</p>
+                        <div class="linea-meta">
+                            <span>👤 Dirección de Planeación</span>
+                            <span>📅 2025-2035</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-dark">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Línea 3 -->
+            <div class="card linea-card">
+                <div class="linea-content">
+                    <div class="linea-info">
+                        <h3 class="linea-title">Educación y Cultura Circular</h3>
+                        <p class="linea-description">Programas de sensibilización y formación en todos los niveles</p>
+                        <div class="linea-meta">
+                            <span>👤 Todas las áreas</span>
+                            <span>📅 2025-2040</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-dark">Ver detalles</button>
+                </div>
+            </div>
+
+            <!-- Línea 4 -->
+            <div class="card linea-card">
+                <div class="linea-content">
+                    <div class="linea-info">
+                        <h3 class="linea-title">Compras Públicas Sostenibles</h3>
+                        <p class="linea-description">Incorporación de criterios de circularidad en adquisiciones públicas</p>
+                        <div class="linea-meta">
+                            <span>👤 Dirección Administrativa</span>
+                            <span>📅 2025-2028</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-dark">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Documentos Descargables -->
+<section class="section-downloads">
+    <div class="container">
+        <h2 class="section-title">Documentos Descargables</h2>
+        <div class="downloads-grid">
+            <!-- Documento 1 -->
+            <div class="card download-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="download-icon text-green">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <h3 class="download-title">Hoja de Ruta Completa</h3>
+                <p class="download-description">Documento técnico completo (PDF, 15 MB)</p>
+                <button class="btn btn-primary download-btn">Descargar PDF</button>
+            </div>
+
+            <!-- Documento 2 -->
+            <div class="card download-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="download-icon text-blue">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <h3 class="download-title">Infografías</h3>
+                <p class="download-description">Material visual para difusión (ZIP, 8 MB)</p>
+                <button class="btn btn-outline-dark download-btn">Descargar ZIP</button>
+            </div>
+
+            <!-- Documento 3 -->
+            <div class="card download-card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="download-icon text-purple">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <h3 class="download-title">Presentación Ejecutiva</h3>
+                <p class="download-description">Resumen para stakeholders (PPTX, 5 MB)</p>
+                <button class="btn btn-outline-dark download-btn">Descargar PPTX</button>
+            </div>
+        </div>
+    </div>
+</section>

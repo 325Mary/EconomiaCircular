@@ -1,0 +1,241 @@
+﻿@page
+@model SectoresModel
+@{
+    ViewData["Title"] = "Sectores Prioritarios";
+}
+
+<!-- Hero Section -->
+<section class="hero-sectores">
+    <div class="container">
+        <div class="breadcrumb">
+            <span>Inicio</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span>Sectores</span>
+        </div>
+        <h1 class="hero-title-sectores">Sectores Prioritarios</h1>
+        <p class="hero-subtitle-sectores">Estrategias sectoriales de economía circular</p>
+    </div>
+</section>
+
+<!-- Sectores Tabs Section -->
+<section class="section-sectores">
+    <div class="container">
+        <!-- Tabs List -->
+        <div class="tabs-list">
+            <button class="tab-trigger active" data-tab="industria">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon">
+                    <rect x="2" y="6" width="20" height="8" rx="1"></rect>
+                    <path d="M17 14v7"></path>
+                    <path d="M7 14v7"></path>
+                    <path d="M17 3v3"></path>
+                    <path d="M7 3v3"></path>
+                    <path d="M10 14 2.3 6.3"></path>
+                    <path d="m14 6 7.7 7.7"></path>
+                    <path d="m8 6 8 8"></path>
+                </svg>
+                <span class="tab-label">Industria</span>
+            </button>
+
+            <button class="tab-trigger" data-tab="construccion">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon">
+                    <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                    <path d="M9 22v-4h6v4"></path>
+                    <path d="M8 6h.01"></path>
+                    <path d="M16 6h.01"></path>
+                    <path d="M12 6h.01"></path>
+                    <path d="M12 10h.01"></path>
+                    <path d="M12 14h.01"></path>
+                    <path d="M16 10h.01"></path>
+                    <path d="M16 14h.01"></path>
+                    <path d="M8 10h.01"></path>
+                    <path d="M8 14h.01"></path>
+                </svg>
+                <span class="tab-label">Construcción</span>
+            </button>
+
+            <button class="tab-trigger" data-tab="comercio">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon">
+                    <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="tab-label">Comercio y Servicios</span>
+            </button>
+
+            <button class="tab-trigger" data-tab="habitante">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tab-icon">
+                    <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span class="tab-label">Habitante Metropolitano</span>
+            </button>
+        </div>
+
+        <!-- Tab Content: Industria -->
+        <div class="tab-content active" id="tab-industria">
+            <div class="card sector-card">
+                <h2 class="sector-title">Industria</h2>
+                <p class="sector-description">Sector manufacturero, textil y producción</p>
+
+                <h3 class="subsector-title">Subsectores</h3>
+                <div class="subsectores-grid">
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Textil y Confección</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Metalmecánica</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Alimentos y Bebidas</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Químico y Plásticos</p>
+                    </div>
+                </div>
+
+                <div class="sector-content">
+                    <h3 class="content-title">Diagnóstico General</h3>
+                    <p class="content-text">
+                        El sector industria representa un componente fundamental
+                        en la economía circular del Valle de Aburrá. Con oportunidades significativas
+                        de mejora en eficiencia de recursos, reducción de residuos y modelos de negocio circulares.
+                    </p>
+
+                    <h3 class="content-title">Buenas Prácticas</h3>
+                    <ul class="content-list">
+                        <li>Diseño para la circularidad desde la concepción del producto/servicio</li>
+                        <li>Optimización de procesos y reducción de desperdicios</li>
+                        <li>Implementación de sistemas de gestión de residuos</li>
+                        <li>Colaboración en cadenas de valor circulares</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content: Construcción -->
+        <div class="tab-content" id="tab-construccion">
+            <div class="card sector-card">
+                <h2 class="sector-title">Construcción</h2>
+                <p class="sector-description">Edificaciones y obras civiles</p>
+
+                <h3 class="subsector-title">Subsectores</h3>
+                <div class="subsectores-grid">
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Edificación Residencial</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Edificación Comercial</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Infraestructura</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Demolición</p>
+                    </div>
+                </div>
+
+                <div class="sector-content">
+                    <h3 class="content-title">Diagnóstico General</h3>
+                    <p class="content-text">
+                        El sector construcción representa un componente fundamental
+                        en la economía circular del Valle de Aburrá. Con oportunidades significativas
+                        de mejora en eficiencia de recursos, reducción de residuos y modelos de negocio circulares.
+                    </p>
+
+                    <h3 class="content-title">Buenas Prácticas</h3>
+                    <ul class="content-list">
+                        <li>Diseño para la circularidad desde la concepción del producto/servicio</li>
+                        <li>Optimización de procesos y reducción de desperdicios</li>
+                        <li>Implementación de sistemas de gestión de residuos</li>
+                        <li>Colaboración en cadenas de valor circulares</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content: Comercio -->
+        <div class="tab-content" id="tab-comercio">
+            <div class="card sector-card">
+                <h2 class="sector-title">Comercio y Servicios</h2>
+                <p class="sector-description">Retail, servicios y economía colaborativa</p>
+
+                <h3 class="subsector-title">Subsectores</h3>
+                <div class="subsectores-grid">
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Comercio Minorista</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Servicios Profesionales</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Turismo</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Gastronomía</p>
+                    </div>
+                </div>
+
+                <div class="sector-content">
+                    <h3 class="content-title">Diagnóstico General</h3>
+                    <p class="content-text">
+                        El sector comercio y servicios representa un componente fundamental
+                        en la economía circular del Valle de Aburrá. Con oportunidades significativas
+                        de mejora en eficiencia de recursos, reducción de residuos y modelos de negocio circulares.
+                    </p>
+
+                    <h3 class="content-title">Buenas Prácticas</h3>
+                    <ul class="content-list">
+                        <li>Diseño para la circularidad desde la concepción del producto/servicio</li>
+                        <li>Optimización de procesos y reducción de desperdicios</li>
+                        <li>Implementación de sistemas de gestión de residuos</li>
+                        <li>Colaboración en cadenas de valor circulares</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Content: Habitante -->
+        <div class="tab-content" id="tab-habitante">
+            <div class="card sector-card">
+                <h2 class="sector-title">Habitante Metropolitano</h2>
+                <p class="sector-description">Participación ciudadana y consumo responsable</p>
+
+                <h3 class="subsector-title">Subsectores</h3>
+                <div class="subsectores-grid">
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Hogares</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Comunidades</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Educación</p>
+                    </div>
+                    <div class="card subsector-card">
+                        <p class="subsector-name">Organizaciones Sociales</p>
+                    </div>
+                </div>
+
+                <div class="sector-content">
+                    <h3 class="content-title">Diagnóstico General</h3>
+                    <p class="content-text">
+                        El sector habitante metropolitano representa un componente fundamental
+                        en la economía circular del Valle de Aburrá. Con oportunidades significativas
+                        de mejora en eficiencia de recursos, reducción de residuos y modelos de negocio circulares.
+                    </p>
+
+                    <h3 class="content-title">Buenas Prácticas</h3>
+                    <ul class="content-list">
+                        <li>Diseño para la circularidad desde la concepción del producto/servicio</li>
+                        <li>Optimización de procesos y reducción de desperdicios</li>
+                        <li>Implementación de sistemas de gestión de residuos</li>
+                        <li>Colaboración en cadenas de valor circulares</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
