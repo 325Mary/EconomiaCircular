@@ -1,0 +1,45 @@
+name: Deploy to GitHub Pages
+
+# Se ejecuta cuando haces push a main
+on:
+  push:
+    branches: [ main ]  # Cambia a 'master' si tu rama se llama así
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    # 1. Descargar el código
+    - name: Checkout
+      uses: actions/checkout@v3
+    
+    # 2. Configurar .NET
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0.x'  # Cambia a tu versión (6.0.x, 7.0.x, 8.0.x)
+    
+    # 3. Publicar el proyecto Blazor
+    - name: Publish
+      run: dotnet publish -c Release -o release --nologo
+    
+    # 4. Cambiar la base path (importante para GitHub Pages)
+    - name: Change base-tag in index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/EconomiaCircular\/" \/>/g' release/wwwroot/index.html
+    
+    # 5. Copiar index.html a 404.html (para que funcione el routing)
+    - name: Copy index.html to 404.html
+      run: cp release/wwwroot/index.html release/wwwroot/404.html
+    
+    # 6. Agregar .nojekyll (evita que GitHub procese el sitio)
+    - name: Add .nojekyll
+      run: touch release/wwwroot/.nojekyll
+    
+    # 7. Deploy a GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: release/wwwroot
+        force_orphan: true
