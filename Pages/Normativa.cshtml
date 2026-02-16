@@ -1,0 +1,299 @@
+﻿@page
+@model NormativaModel
+@{
+    ViewData["Title"] = "Normativa y Marco Regulatorio";
+}
+
+<!-- Hero Section -->
+<section class="hero-normativa">
+    <div class="container">
+        <div class="breadcrumb">
+            <span>Inicio</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span>Normativa</span>
+        </div>
+        <h1 class="hero-title-normativa">Normativa y Marco Regulatorio</h1>
+        <p class="hero-subtitle-normativa">Legislación aplicable en Economía Circular</p>
+    </div>
+</section>
+
+<!-- Normativa Section -->
+<section class="section-normativa">
+    <div class="container">
+
+        <!-- Tabs List -->
+        <div class="normativa-tabs-list">
+            <button class="normativa-tab-trigger active" data-tab="nacional">Nacional</button>
+            <button class="normativa-tab-trigger" data-tab="metropolitana">Metropolitana</button>
+            <button class="normativa-tab-trigger" data-tab="rep">REP</button>
+        </div>
+
+        <!-- Tab Content: Nacional -->
+        <div class="normativa-tab-content active" id="tab-nacional">
+            <div class="normativa-list">
+
+                <!-- Norma 1 -->
+                <div class="card norma-card">
+                    <div class="norma-content">
+                        <div class="norma-info">
+                            <div class="norma-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="norma-icon icon-red">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <h3 class="norma-title">Ley 1715 de 2014</h3>
+                            </div>
+                            <p class="norma-fecha">Fecha: 13 de Mayo 2014</p>
+                            <p class="norma-descripcion">Regulación de la integración de energías renovables al Sistema Energético Nacional</p>
+                        </div>
+                        <div class="norma-actions">
+                            <button class="btn btn-sm btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.25rem;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Norma 2 -->
+                <div class="card norma-card">
+                    <div class="norma-content">
+                        <div class="norma-info">
+                            <div class="norma-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="norma-icon icon-red">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <h3 class="norma-title">Ley 2184 de 2021</h3>
+                            </div>
+                            <p class="norma-fecha">Fecha: 15 de Diciembre 2021</p>
+                            <p class="norma-descripcion">Ley de Responsabilidad Extendida del Productor (REP)</p>
+                        </div>
+                        <div class="norma-actions">
+                            <button class="btn btn-sm btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.25rem;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Norma 3 -->
+                <div class="card norma-card">
+                    <div class="norma-content">
+                        <div class="norma-info">
+                            <div class="norma-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="norma-icon icon-red">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <h3 class="norma-title">Decreto 596 de 2016</h3>
+                            </div>
+                            <p class="norma-fecha">Fecha: 11 de Abril 2016</p>
+                            <p class="norma-descripcion">Esquema de aprovechamiento de residuos sólidos</p>
+                        </div>
+                        <div class="norma-actions">
+                            <button class="btn btn-sm btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.25rem;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tab Content: Metropolitana -->
+        <div class="normativa-tab-content" id="tab-metropolitana">
+            <div class="normativa-list">
+
+                <!-- Norma 1 -->
+                <div class="card norma-card">
+                    <div class="norma-content">
+                        <div class="norma-info">
+                            <div class="norma-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="norma-icon icon-green">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <h3 class="norma-title">Acuerdo Metropolitano 018 de 2023</h3>
+                            </div>
+                            <p class="norma-fecha">Fecha: 20 de Julio 2023</p>
+                            <p class="norma-descripcion">Hoja de Ruta de Economía Circular del Valle de Aburrá</p>
+                        </div>
+                        <div class="norma-actions">
+                            <button class="btn btn-sm btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.25rem;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Norma 2 -->
+                <div class="card norma-card">
+                    <div class="norma-content">
+                        <div class="norma-info">
+                            <div class="norma-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="norma-icon icon-green">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <h3 class="norma-title">Resolución AMVA 200 de 2022</h3>
+                            </div>
+                            <p class="norma-fecha">Fecha: 15 de Marzo 2022</p>
+                            <p class="norma-descripcion">Lineamientos para gestión de residuos especiales</p>
+                        </div>
+                        <div class="norma-actions">
+                            <button class="btn btn-sm btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.25rem;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tab Content: REP -->
+        <div class="normativa-tab-content" id="tab-rep">
+            <div class="normativa-list">
+
+                <!-- Norma 1 -->
+                <div class="card norma-card">
+                    <div class="norma-content">
+                        <div class="norma-info">
+                            <div class="norma-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="norma-icon icon-blue">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <h3 class="norma-title">Resolución 1407 de 2018</h3>
+                            </div>
+                            <p class="norma-fecha">Fecha: 26 de Julio 2018</p>
+                            <p class="norma-descripcion">REP para envases y empaques</p>
+                        </div>
+                        <div class="norma-actions">
+                            <button class="btn btn-sm btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.25rem;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Norma 2 -->
+                <div class="card norma-card">
+                    <div class="norma-content">
+                        <div class="norma-info">
+                            <div class="norma-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="norma-icon icon-blue">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <h3 class="norma-title">Resolución 1408 de 2018</h3>
+                            </div>
+                            <p class="norma-fecha">Fecha: 26 de Julio 2018</p>
+                            <p class="norma-descripcion">REP para pilas y acumuladores</p>
+                        </div>
+                        <div class="norma-actions">
+                            <button class="btn btn-sm btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.25rem;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Norma 3 -->
+                <div class="card norma-card">
+                    <div class="norma-content">
+                        <div class="norma-info">
+                            <div class="norma-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="norma-icon icon-blue">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                    <polyline points="10 9 9 9 8 9"></polyline>
+                                </svg>
+                                <h3 class="norma-title">Resolución 1675 de 2013</h3>
+                            </div>
+                            <p class="norma-fecha">Fecha: 21 de Agosto 2013</p>
+                            <p class="norma-descripcion">REP para llantas usadas</p>
+                        </div>
+                        <div class="norma-actions">
+                            <button class="btn btn-sm btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.25rem;">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                                PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+@section Scripts {
+    <script src="~/js/normativa.js" asp-append-version="true"></script>
+}

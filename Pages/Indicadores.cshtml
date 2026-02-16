@@ -1,0 +1,217 @@
+﻿@page
+@model IndicadoresModel
+@{
+    ViewData["Title"] = "Indicadores de Economía Circular";
+}
+
+<!-- Hero Section -->
+<section class="hero-indicadores">
+    <div class="container">
+        <h1 class="hero-title-indicadores">Indicadores de Economía Circular</h1>
+        <p class="hero-subtitle-indicadores">Dashboard de Métricas y Avances</p>
+    </div>
+</section>
+
+<!-- Filtros Section -->
+<section class="section-filtros">
+    <div class="container">
+        <div class="filtros-container">
+            <div class="filtros-group">
+                <select class="filter-select">
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+
+                <select class="filter-select">
+                    <option value="todos">Todos</option>
+                    <option value="medellin">Medellín</option>
+                    <option value="bello">Bello</option>
+                    <option value="itagui">Itagüí</option>
+                </select>
+
+                <select class="filter-select">
+                    <option value="todos">Todos</option>
+                    <option value="industria">Industria</option>
+                    <option value="construccion">Construcción</option>
+                    <option value="comercio">Comercio</option>
+                </select>
+            </div>
+
+            <button class="btn btn-outline-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Exportar Datos
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Indicadores Principales -->
+<section class="section-indicadores">
+    <div class="container">
+        <div class="indicadores-grid">
+
+            <!-- Indicador 1: Flujos de Materiales -->
+            <div class="card indicador-card">
+                <div class="indicador-header">
+                    <div class="indicador-icon bg-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16.5 9.4 7.55 4.24"></path>
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                            <line x1="12" y1="22" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <span class="indicador-trend">+4.8%</span>
+                </div>
+                <p class="indicador-label">Flujos de Materiales</p>
+                <div class="indicador-value-container">
+                    <span class="indicador-value">15,200</span>
+                    <span class="indicador-unit">ton/año</span>
+                </div>
+            </div>
+
+            <!-- Indicador 2: Aprovechamiento -->
+            <div class="card indicador-card">
+                <div class="indicador-header">
+                    <div class="indicador-icon bg-blue">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 8L18.74 5.74A9.75 9.75 0 0 0 12 3C11 3 10.03 3.16 9.13 3.47"></path>
+                            <path d="M8 16H3v5"></path>
+                            <path d="M3 12C3 9.51 4 7.26 5.64 5.64"></path>
+                            <path d="m3 16 2.26 2.26A9.75 9.75 0 0 0 12 21c2.49 0 4.74-1 6.36-2.64"></path>
+                            <path d="M21 12c0 1-.16 1.97-.47 2.87"></path>
+                            <path d="M21 3v5h-5"></path>
+                        </svg>
+                    </div>
+                    <span class="indicador-trend">+12%</span>
+                </div>
+                <p class="indicador-label">Aprovechamiento</p>
+                <div class="indicador-value-container">
+                    <span class="indicador-value">60%</span>
+                    <span class="indicador-unit">del total</span>
+                </div>
+            </div>
+
+            <!-- Indicador 3: Empleo Verde -->
+            <div class="card indicador-card">
+                <div class="indicador-header">
+                    <div class="indicador-icon bg-purple">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <span class="indicador-trend">+18%</span>
+                </div>
+                <p class="indicador-label">Empleo Verde</p>
+                <div class="indicador-value-container">
+                    <span class="indicador-value">2,450</span>
+                    <span class="indicador-unit">puestos</span>
+                </div>
+            </div>
+
+            <!-- Indicador 4: Inversión EC -->
+            <div class="card indicador-card">
+                <div class="indicador-header">
+                    <div class="indicador-icon bg-orange">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                            <polyline points="16 7 22 7 22 13"></polyline>
+                        </svg>
+                    </div>
+                    <span class="indicador-trend">+25%</span>
+                </div>
+                <p class="indicador-label">Inversión EC</p>
+                <div class="indicador-value-container">
+                    <span class="indicador-value">$12.5M</span>
+                    <span class="indicador-unit">USD</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Gráficos Section -->
+<section class="section-graficos">
+    <div class="container graficos-container">
+
+        <!-- Gráfico de Barras: Flujos de Materiales -->
+        <div class="card chart-card">
+            <h3 class="chart-title">Evolución de Flujos de Materiales</h3>
+            <div class="chart-container">
+                <canvas id="chartFlujos"></canvas>
+            </div>
+        </div>
+
+        <!-- Grid de 2 gráficos -->
+        <div class="charts-grid">
+
+            <!-- Gráfico de Pastel: Aprovechamiento -->
+            <div class="card chart-card">
+                <h3 class="chart-title">Distribución de Aprovechamiento</h3>
+                <div class="chart-container">
+                    <canvas id="chartAprovechamiento"></canvas>
+                </div>
+            </div>
+
+            <!-- Gráfico de Línea: Tasa de Circularidad -->
+            <div class="card chart-card">
+                <h3 class="chart-title">Tasa de Circularidad</h3>
+                <div class="chart-container">
+                    <canvas id="chartCircularidad"></canvas>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Exportación Section -->
+<section class="section-exportacion">
+    <div class="container">
+        <div class="card export-card">
+            <h3 class="export-title">Descarga los Datos Completos</h3>
+            <p class="export-description">
+                Accede a los indicadores en formatos abiertos para tu análisis
+            </p>
+            <div class="export-buttons">
+                <button class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar CSV
+                </button>
+                <button class="btn btn-outline-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar Excel
+                </button>
+                <button class="btn btn-outline-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar PDF
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="~/js/indicadores.js" asp-append-version="true"></script>
+}

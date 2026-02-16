@@ -1,0 +1,170 @@
+﻿/* ============================================
+   NORMATIVA PAGE STYLES
+   ============================================ */
+
+/* Hero Section */
+.hero-normativa {
+	background: linear-gradient(to right, rgb(220, 38, 38), rgb(185, 28, 28));
+	color: white;
+	padding: 3rem 0;
+}
+
+.hero-title-normativa {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.hero-subtitle-normativa {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+	.hero-title-normativa {
+		font-size: 3rem;
+		line-height: 1;
+	}
+}
+
+/* Normativa Section */
+.section-normativa {
+	padding: 4rem 0;
+	background-color: rgb(249, 250, 251);
+	min-height: 100vh;
+}
+
+/* Tabs List */
+.normativa-tabs-list {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0;
+	margin-bottom: 1.5rem;
+	background-color: rgb(243, 244, 246);
+	border-radius: 1.5rem;
+	padding: 0.25rem;
+}
+
+/* Tab Trigger */
+.normativa-tab-trigger {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.75rem 1rem;
+	background-color: transparent;
+	border: none;
+	border-radius: 8.375rem;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	color: rgb(55, 65, 81);
+	font-weight: 500;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+	.normativa-tab-trigger:hover {
+		background-color: rgb(229, 231, 235);
+	}
+
+	.normativa-tab-trigger.active {
+		background-color: white;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	}
+
+/* Tab Content */
+.normativa-tab-content {
+	display: none;
+}
+
+	.normativa-tab-content.active {
+		display: block;
+	}
+
+/* Normativa List */
+.normativa-list {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+
+/* Norma Card */
+.norma-card {
+	padding: 1.5rem;
+}
+
+.norma-content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+@media (max-width: 640px) {
+	.norma-content {
+		flex-direction: column;
+	}
+}
+
+.norma-info {
+	flex: 1;
+}
+
+.norma-header {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin-bottom: 0.5rem;
+}
+
+.norma-icon {
+	width: 1.25rem;
+	height: 1.25rem;
+	flex-shrink: 0;
+}
+
+	.norma-icon.icon-red {
+		color: rgb(220, 38, 38);
+	}
+
+	.norma-icon.icon-green {
+		color: rgb(22, 163, 74);
+	}
+
+	.norma-icon.icon-blue {
+		color: rgb(37, 99, 235);
+	}
+
+.norma-title {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 600;
+	color: rgb(17, 24, 39);
+	margin: 0;
+}
+
+.norma-fecha {
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	color: rgb(107, 114, 128);
+	margin-bottom: 0.5rem;
+}
+
+.norma-descripcion {
+	color: rgb(75, 85, 99);
+	line-height: 1.5;
+}
+
+.norma-actions {
+	display: flex;
+	gap: 0.5rem;
+}
+
+/* Button Small */
+.btn-sm {
+	padding: 0.375rem 0.75rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
