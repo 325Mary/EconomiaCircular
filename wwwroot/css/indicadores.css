@@ -1,8 +1,5 @@
-﻿/* ============================================
-   INDICADORES PAGE STYLES
-   ============================================ */
+﻿
 
-/* Hero Section */
 .hero-indicadores {
 	background: linear-gradient(to right, rgb(37, 99, 235), rgb(29, 78, 216));
 	color: white;
@@ -28,7 +25,7 @@
 	}
 }
 
-/* Filtros Section */
+
 .section-filtros {
 	padding: 1.5rem 0;
 	background-color: white;
@@ -66,7 +63,7 @@
 		outline-offset: 2px;
 	}
 
-/* Indicadores Section */
+
 .section-indicadores {
 	padding: 2rem 0;
 }
@@ -89,7 +86,7 @@
 	}
 }
 
-/* Indicador Card */
+
 .indicador-card {
 	padding: 1.5rem;
 }
@@ -163,7 +160,7 @@
 	color: rgb(107, 114, 128);
 }
 
-/* Gráficos Section */
+
 .section-graficos {
 	padding: 2rem 0;
 }
@@ -204,7 +201,7 @@
 	}
 }
 
-/* Exportación Section */
+
 .section-exportacion {
 	padding: 2rem 0;
 }

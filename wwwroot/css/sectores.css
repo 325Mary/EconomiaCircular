@@ -1,4 +1,4 @@
-﻿/* Hero Section - Sectores */
+﻿
 .hero-sectores {
 	background: linear-gradient(to right, #4f46e5, #4338ca);
 	color: white;
@@ -35,13 +35,13 @@
 	opacity: 0.9;
 }
 
-/* Section Sectores */
+
 .section-sectores {
 	padding: 4rem 0;
 	background: #f9fafb;
 }
 
-	/* Tabs List */
+	
 	.section-sectores .tabs-list {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -102,7 +102,7 @@
 	}
 }
 
-/* Tab Content */
+
 .section-sectores .tab-content {
 	display: none;
 }
@@ -124,7 +124,7 @@
 	}
 }
 
-/* Sector Card */
+
 .sector-card {
 	background: white;
 	border-radius: 0.5rem;
@@ -144,7 +144,7 @@
 	margin-bottom: 2rem;
 }
 
-/* Subsectores */
+
 .subsector-title {
 	font-size: 1.25rem;
 	color: #111827;
@@ -178,7 +178,7 @@
 	margin: 0;
 }
 
-/* Sector Content */
+
 .sector-content {
 	margin-top: 2rem;
 }

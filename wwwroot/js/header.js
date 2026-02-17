@@ -1,8 +1,8 @@
-﻿// ============================================
-// HEADER JAVASCRIPT
-// ============================================
+﻿
+
+
 document.addEventListener('DOMContentLoaded', function () {
-    // Mobile Menu Toggle
+    
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenuOverlay.addEventListener('click', closeMobileMenu);
     }
 
-    // Close mobile menu when clicking on a link
+    
     const mobileNavLinks = document.querySelectorAll('.mobile-nav-link:not(.mobile-nav-toggle), .mobile-nav-sublink');
     mobileNavLinks.forEach(link => {
         link.addEventListener('click', function () {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Mobile Submenu Toggles
+    
     const mobileNavToggles = document.querySelectorAll('.mobile-nav-toggle');
     mobileNavToggles.forEach(toggle => {
         toggle.addEventListener('click', function (e) {
@@ -57,19 +57,19 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // ===== NUEVO: Desktop Dropdown Toggle =====
+    
     const dropdownTriggers = document.querySelectorAll('.nav-dropdown-trigger');
 
     dropdownTriggers.forEach(trigger => {
         trigger.addEventListener('click', function (e) {
             e.preventDefault();
-            e.stopPropagation(); // Evita que se propague el click
+            e.stopPropagation(); 
 
             const dropdown = this.closest('.nav-dropdown');
             const menu = dropdown.querySelector('.nav-dropdown-menu');
             const isOpen = menu.style.opacity === '1';
 
-            // Cerrar todos los otros dropdowns
+            
             document.querySelectorAll('.nav-dropdown-menu').forEach(otherMenu => {
                 if (otherMenu !== menu) {
                     otherMenu.style.opacity = '0';
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
 
-            // Toggle el dropdown actual
+            
             if (isOpen) {
                 menu.style.opacity = '0';
                 menu.style.visibility = 'hidden';
@@ -88,9 +88,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Close dropdowns when clicking outside
+    
     document.addEventListener('click', function (e) {
-        // Cierra si el click NO es dentro de un dropdown Y NO es dentro del header
+        
         if (!e.target.closest('.nav-dropdown') && !e.target.closest('.header-main')) {
             document.querySelectorAll('.nav-dropdown-menu').forEach(menu => {
                 menu.style.opacity = '0';
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Highlight active page
+    
     const currentPath = window.location.pathname;
     const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
     navLinks.forEach(link => {
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // ESC key to close mobile menu and dropdowns
+    
     document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') {
             closeMobileMenu();

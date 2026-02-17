@@ -1,0 +1,258 @@
+﻿@page
+@model FlujoMaterialesModel
+@{
+    ViewData["Title"] = "Flujo de Materiales";
+}
+
+<section class="hero-flujo">
+    <div class="container">
+        <div class="breadcrumb">
+            <span>Inicio</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+            <span>Flujo de Materiales</span>
+        </div>
+        <h1 class="hero-title-flujo">Flujo de Materiales</h1>
+        <p class="hero-subtitle-flujo">Diagnóstico Metropolitano de Recursos y Residuos</p>
+    </div>
+</section>
+
+<section class="section-diagnostico">
+    <div class="container">
+        <div class="card diagnostico-card">
+            <h2 class="diagnostico-title">Descripción del Diagnóstico</h2>
+
+            <div class="diagnostico-content">
+                <p class="diagnostico-text">
+                    El diagnóstico de flujo de materiales del Área Metropolitana del Valle de Aburrá
+                    constituye una herramienta fundamental para comprender los patrones de consumo y
+                    producción de nuestra región. Este análisis cuantifica las entradas,
+                    transformaciones y salidas de materiales en el territorio metropolitano.
+                </p>
+
+                <div class="diagnostico-grid">
+                    <div class="diagnostico-item">
+                        <div class="diagnostico-icon bg-blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="diagnostico-item-title">Entradas</h3>
+                        <p class="diagnostico-item-text">
+                            Materias primas, productos importados y recursos naturales que ingresan
+                            al sistema metropolitano anualmente.
+                        </p>
+                    </div>
+
+                    <div class="diagnostico-item">
+                        <div class="diagnostico-icon bg-green">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 8L18.74 5.74A9.75 9.75 0 0 0 12 3C11 3 10.03 3.16 9.13 3.47"></path>
+                                <path d="M8 16H3v5"></path>
+                                <path d="M3 12C3 9.51 4 7.26 5.64 5.64"></path>
+                                <path d="m3 16 2.26 2.26A9.75 9.75 0 0 0 12 21c2.49 0 4.74-1 6.36-2.64"></path>
+                                <path d="M21 12c0 1-.16 1.97-.47 2.87"></path>
+                                <path d="M21 3v5h-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="diagnostico-item-title">Transformaciones</h3>
+                        <p class="diagnostico-item-text">
+                            Procesos industriales, manufactureros y de servicios que agregan valor
+                            y transforman los materiales.
+                        </p>
+                    </div>
+
+                    <div class="diagnostico-item">
+                        <div class="diagnostico-icon bg-orange">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                <polyline points="16 7 22 7 22 13"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="diagnostico-item-title">Salidas</h3>
+                        <p class="diagnostico-item-text">
+                            Residuos generados, materiales reciclados, productos exportados y
+                            emisiones al ambiente.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="diagnostico-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">15,200</div>
+                        <div class="stat-label">Toneladas/año de materiales</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">60%</div>
+                        <div class="stat-label">Tasa de aprovechamiento</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">Municipios analizados</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-mapa">
+    <div class="container">
+        <div class="card mapa-card">
+            <h2 class="mapa-title">Mapa de Flujo de Materiales AMVA</h2>
+            <p class="mapa-description">
+                Visualización interactiva del diagrama de Sankey que muestra los flujos de materiales
+                en el Área Metropolitana del Valle de Aburrá.
+            </p>
+
+            <div class="mapa-diagram" id="sankeyDiagram">
+            </div>
+
+            <div class="mapa-legend">
+                <h3 class="legend-title">Leyenda</h3>
+                <div class="legend-items">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #3b82f6;"></div>
+                        <span>Materiales de Entrada</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #10b981;"></div>
+                        <span>Materiales Procesados</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #f59e0b;"></div>
+                        <span>Residuos</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #8b5cf6;"></div>
+                        <span>Materiales Reciclados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-documentos">
+    <div class="container">
+        <h2 class="documentos-section-title">Documentos Descargables</h2>
+
+        <div class="documentos-grid">
+
+            <div class="card documento-card">
+                <div class="documento-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="documento-icon icon-red">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <h3 class="documento-title">Informe Completo de Flujo de Materiales</h3>
+                <p class="documento-description">
+                    Diagnóstico técnico completo del flujo de materiales en el AMVA 2024
+                </p>
+                <div class="documento-meta">
+                    <span class="documento-format">PDF</span>
+                    <span class="documento-size">12.5 MB</span>
+                    <span class="documento-pages">156 páginas</span>
+                </div>
+                <button class="btn btn-primary btn-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar PDF
+                </button>
+            </div>
+
+            <div class="card documento-card">
+                <div class="documento-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="documento-icon icon-blue">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                </div>
+                <h3 class="documento-title">Infografía de Flujos</h3>
+                <p class="documento-description">
+                    Resumen visual y gráfico del diagnóstico de materiales
+                </p>
+                <div class="documento-meta">
+                    <span class="documento-format">PNG</span>
+                    <span class="documento-size">3.2 MB</span>
+                    <span class="documento-pages">Alta resolución</span>
+                </div>
+                <button class="btn btn-outline-dark btn-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar Imagen
+                </button>
+            </div>
+
+            <div class="card documento-card">
+                <div class="documento-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="documento-icon icon-green">
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                </div>
+                <h3 class="documento-title">Resumen Ejecutivo</h3>
+                <p class="documento-description">
+                    Síntesis de hallazgos principales y recomendaciones estratégicas
+                </p>
+                <div class="documento-meta">
+                    <span class="documento-format">PDF</span>
+                    <span class="documento-size">2.8 MB</span>
+                    <span class="documento-pages">24 páginas</span>
+                </div>
+                <button class="btn btn-outline-dark btn-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar PDF
+                </button>
+            </div>
+
+            <div class="card documento-card">
+                <div class="documento-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="documento-icon icon-purple">
+                        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                        <polyline points="13 2 13 9 20 9"></polyline>
+                    </svg>
+                </div>
+                <h3 class="documento-title">Base de Datos (CSV)</h3>
+                <p class="documento-description">
+                    Datos abiertos en formato CSV para análisis personalizado
+                </p>
+                <div class="documento-meta">
+                    <span class="documento-format">CSV</span>
+                    <span class="documento-size">1.5 MB</span>
+                    <span class="documento-pages">Datos 2020-2024</span>
+                </div>
+                <button class="btn btn-outline-dark btn-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar CSV
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script src="~/js/flujo-materiales.js" asp-append-version="true"></script>
+}

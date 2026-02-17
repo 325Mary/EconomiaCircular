@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body {
 
 
 
-/* Hero Section */
+
 .hero-section {
     height: 600px;
     background-image: linear-gradient(rgba(0, 128, 0, 0.7), rgba(0, 128, 0, 0.7)), url('https://images.unsplash.com/photo-1646803101279-d1a2461a5eb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920');
@@ -61,7 +61,7 @@ body {
     }
 }
 
-/* Buttons */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -104,7 +104,7 @@ body {
         background-color: #f3f4f6;
     }
 
-/* Sections */
+
 .section-white {
     padding: 4rem 0;
     background-color: white;
@@ -145,7 +145,7 @@ body {
     color: white;
 }
 
-/* Quick Access Cards */
+
 .quick-access-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -244,7 +244,7 @@ body {
     color: #6b7280;
 }
 
-/* Circular Economy Section */
+
 .two-column-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -324,7 +324,7 @@ body {
         color: #16a34a;
     }
 
-/* Focos Temáticos */
+
 .focos-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -397,7 +397,7 @@ body {
     color: #e5e7eb;
 }
 
-/* News Section */
+
 .news-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -460,7 +460,7 @@ body {
     color: #6b7280;
 }
 
-/* Destacamos Section */
+
 .destacados-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -506,7 +506,7 @@ body {
     color: rgba(255, 255, 255, 0.9);
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .hero-title {
         font-size: 2.5rem;

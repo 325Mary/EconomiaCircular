@@ -6,7 +6,6 @@ namespace EconomiaCircular.Pages
 	{
 		public void OnGet()
 		{
-			// Contenido estático por ahora
 		}
 	}
 }

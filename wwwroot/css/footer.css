@@ -1,7 +1,4 @@
-﻿/* ============================================
-   FOOTER STYLES
-   ============================================ */
-
+﻿
 .footer-economiacircular {
 	background-color: rgb(17, 24, 39);
 	color: rgb(209, 213, 219);
@@ -27,7 +24,7 @@
 	}
 }
 
-/* Footer Grid */
+
 .footer-grid {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -46,12 +43,12 @@
 	}
 }
 
-/* Footer Section */
+
 .footer-section {
-	/* Cada columna del footer */
+	
 }
 
-/* Brand Section */
+
 .footer-brand {
 	display: flex;
 	align-items: center;
@@ -75,7 +72,7 @@
 }
 
 .footer-brand-text {
-	/* Container de nombre y subtitle */
+	
 }
 
 .footer-brand-name {
@@ -94,7 +91,7 @@
 	margin-bottom: 1rem;
 }
 
-/* Social Links */
+
 .footer-social {
 	display: flex;
 	gap: 0.75rem;
@@ -114,7 +111,7 @@
 		height: 1.25rem;
 	}
 
-/* Footer Title */
+
 .footer-title {
 	color: white;
 	font-weight: 600;
@@ -122,7 +119,7 @@
 	font-size: 1rem;
 }
 
-/* Footer Links */
+
 .footer-links {
 	list-style: none;
 	padding: 0;
@@ -144,7 +141,7 @@
 		color: rgb(74, 222, 128);
 	}
 
-/* Footer Contact */
+
 .footer-contact {
 	list-style: none;
 	padding: 0;
@@ -169,7 +166,7 @@
 	flex-shrink: 0;
 }
 
-/* Footer Bottom */
+
 .footer-bottom {
 	border-top: 1px solid rgb(31, 41, 55);
 	margin-top: 2rem;

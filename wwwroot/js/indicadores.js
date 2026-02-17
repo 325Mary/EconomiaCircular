@@ -1,10 +1,10 @@
-﻿// ============================================
-// INDICADORES CHARTS JAVASCRIPT
-// ============================================
+﻿
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Datos
+    
     const dataFlujos = [
         { year: '2020', materiales: 12500, reciclado: 3750 },
         { year: '2021', materiales: 13200, reciclado: 4500 },
@@ -20,16 +20,16 @@ document.addEventListener('DOMContentLoaded', function () {
         { name: 'Otro', value: 5 },
     ];
 
-    // Colores
+    
     const COLORS = ['#10b981', '#3b82f6', '#f59e0b', '#6b7280'];
 
-    // Configuración común de Chart.js
+    
     Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
     Chart.defaults.color = '#6b7280';
 
-    // ==========================================
-    // 1. Gráfico de Barras: Flujos de Materiales
-    // ==========================================
+    
+    
+    
     const ctxFlujos = document.getElementById('chartFlujos');
     if (ctxFlujos) {
         new Chart(ctxFlujos, {
@@ -90,9 +90,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ==========================================
-    // 2. Gráfico de Pastel: Aprovechamiento
-    // ==========================================
+    
+    
+    
     const ctxAprovechamiento = document.getElementById('chartAprovechamiento');
     if (ctxAprovechamiento) {
         new Chart(ctxAprovechamiento, {
@@ -125,12 +125,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ==========================================
-    // 3. Gráfico de Línea: Tasa de Circularidad
-    // ==========================================
+    
+    
+    
     const ctxCircularidad = document.getElementById('chartCircularidad');
     if (ctxCircularidad) {
-        // Calcular porcentaje de circularidad
+        
         const circularidadData = dataFlujos.map(d =>
             Math.round((d.reciclado / d.materiales) * 100)
         );
@@ -192,15 +192,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // ==========================================
-    // Funcionalidad de Exportación
-    // ==========================================
+    
+    
+    
     const exportButtons = document.querySelectorAll('.export-buttons .btn');
     exportButtons.forEach(button => {
         button.addEventListener('click', function () {
-            const format = this.textContent.trim().split(' ')[1]; // CSV, Excel, o PDF
+            const format = this.textContent.trim().split(' ')[1]; 
             console.log('Exportando en formato:', format);
-            // Aquí puedes agregar la lógica real de exportación
+            
             alert('Funcionalidad de exportación ' + format + ' - Implementar en el backend');
         });
     });

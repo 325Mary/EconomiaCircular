@@ -1,8 +1,5 @@
-﻿/* ============================================
-   CONTACTO PAGE STYLES
-   ============================================ */
+﻿
 
-/* Hero Section */
 .hero-contacto {
 	background: linear-gradient(to right, rgb(13, 148, 136), rgb(15, 118, 110));
 	color: white;
@@ -28,7 +25,7 @@
 	}
 }
 
-/* Contacto Section */
+
 .section-contacto {
 	padding: 4rem 0;
 	background-color: rgb(249, 250, 251);
@@ -46,14 +43,14 @@
 	}
 }
 
-/* Columna de Información */
+
 .contacto-info-column {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
 }
 
-/* Info Card */
+
 .info-card {
 	padding: 1.5rem;
 }
@@ -110,7 +107,7 @@
 	color: rgb(75, 85, 99);
 }
 
-/* Download Card */
+
 .download-card {
 	background-color: rgb(240, 253, 244);
 	padding: 1.5rem;
@@ -130,14 +127,14 @@
 		margin-bottom: 0;
 	}
 
-/* Columna de Formulario */
+
 .contacto-form-column {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
 }
 
-/* Form Card */
+
 .form-card {
 	padding: 2rem;
 }
@@ -150,7 +147,7 @@
 	color: rgb(17, 24, 39);
 }
 
-/* Contact Form */
+
 .contact-form {
 	display: flex;
 	flex-direction: column;
@@ -217,7 +214,7 @@
 		border-color: rgb(59, 130, 246);
 	}
 
-/* Checkbox */
+
 .form-checkbox-group {
 	display: flex;
 	align-items: flex-start;
@@ -236,7 +233,7 @@
 	cursor: pointer;
 }
 
-/* CAPTCHA */
+
 .captcha-container {
 	background-color: rgb(243, 244, 246);
 	padding: 1rem;
@@ -266,14 +263,14 @@
 	color: rgb(75, 85, 99);
 }
 
-/* Button Large */
+
 .btn-lg {
 	padding: 0.75rem 2rem;
 	font-size: 1.125rem;
 	line-height: 1.75rem;
 }
 
-/* Map Card */
+
 .map-card {
 	padding: 0;
 	overflow: hidden;

@@ -1,7 +1,4 @@
-﻿/* ============================================
-   HEADER STYLES
-   ============================================ */
-
+﻿
 .header-main {
 	position: sticky;
 	top: 0;
@@ -39,7 +36,7 @@
 	justify-content: space-between;
 }
 
-/* Brand/Logo */
+
 .header-brand {
 	display: flex;
 	align-items: center;
@@ -82,7 +79,7 @@
 	color: rgb(75, 85, 81);
 }
 
-/* Desktop Navigation */
+
 .header-nav-desktop {
 	display: none;
 	align-items: center;
@@ -120,7 +117,7 @@
 		color: rgb(22, 163, 74);
 	}
 
-/* Dropdown Menu */
+
 .nav-dropdown {
 	position: relative;
 }
@@ -187,7 +184,7 @@
 		border-radius: 0 0 0.5rem 0.5rem;
 	}
 
-/* Desktop Actions */
+
 .header-actions-desktop {
 	display: none;
 	align-items: center;
@@ -234,7 +231,7 @@
 		border-color: rgb(156, 163, 175);
 	}
 
-/* Mobile Toggle Button */
+
 .header-mobile-toggle {
 	display: flex;
 	align-items: center;
@@ -259,7 +256,7 @@
 	background-color: rgb(243, 244, 246);
 }
 
-/* Mobile Menu Overlay */
+
 .mobile-menu-overlay {
 	position: fixed;
 	inset: 0;
@@ -275,7 +272,7 @@
 		visibility: visible;
 	}
 
-/* Mobile Menu */
+
 .mobile-menu {
 	position: fixed;
 	top: 0;
@@ -327,7 +324,7 @@
 		background-color: rgb(243, 244, 246);
 	}
 
-/* Mobile Navigation */
+
 .mobile-menu-nav {
 	display: flex;
 	flex-direction: column;
@@ -361,13 +358,13 @@
 		color: rgb(22, 163, 74);
 	}
 
-/* Mobile Navigation Section (with submenu) */
+
 .mobile-nav-section {
-	/* Container for items with submenus */
+	
 }
 
 .mobile-nav-toggle {
-	/* Same as mobile-nav-link */
+	
 }
 
 .mobile-chevron {
@@ -408,7 +405,7 @@
 		background-color: rgb(243, 244, 246);
 	}
 
-/* Prevent body scroll when mobile menu is open */
+
 body.mobile-menu-open {
 	overflow: hidden;
 }

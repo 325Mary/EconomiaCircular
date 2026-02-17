@@ -1,6 +1,6 @@
-﻿// ============================================
-// CONTACTO FORM JAVASCRIPT
-// ============================================
+﻿
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
 
-            // Validar formulario
+            
             if (!validateForm()) {
                 return;
             }
 
-            // Obtener datos del formulario
+            
             const formData = {
                 nombre: document.getElementById('nombre').value,
                 correo: document.getElementById('correo').value,
@@ -25,17 +25,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 acepto: document.getElementById('acepto').checked
             };
 
-            // Aquí puedes enviar los datos al servidor
+            
             console.log('Datos del formulario:', formData);
 
-            // Simular envío exitoso
+            
             alert('Mensaje enviado correctamente. Te contactaremos pronto.');
 
-            // Limpiar formulario
+            
             contactForm.reset();
 
-            // Si quieres enviar realmente al servidor, descomenta esto:
-            // this.submit();
+            
+            
         });
     }
 
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return emailRegex.test(email);
     }
 
-    // Botones de descarga
+    
     const downloadButtons = document.querySelectorAll('.btn-download');
     downloadButtons.forEach(button => {
         button.addEventListener('click', function () {
@@ -93,12 +93,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Contador de caracteres para el textarea (opcional)
+    
     const mensajeTextarea = document.getElementById('mensaje');
     if (mensajeTextarea) {
         mensajeTextarea.addEventListener('input', function () {
             const currentLength = this.value.length;
-            const maxLength = 1000; // Puedes ajustar este límite
+            const maxLength = 1000; 
 
             if (currentLength > maxLength) {
                 this.value = this.value.substring(0, maxLength);

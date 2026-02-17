@@ -10,7 +10,6 @@ namespace EconomiaCircular.Pages
 
 		public void OnGet()
 		{
-			// Mostrar formulario vacío
 		}
 
 		public IActionResult OnPost()
@@ -20,12 +19,6 @@ namespace EconomiaCircular.Pages
 				return Page();
 			}
 
-			// Aquí puedes procesar el formulario:
-			// - Enviar email
-			// - Guardar en base de datos
-			// - Integrar con un CRM
-
-			// Por ahora, solo mostramos un mensaje de éxito
 			TempData["Mensaje"] = "Mensaje enviado correctamente. Te contactaremos pronto.";
 
 			return RedirectToPage();

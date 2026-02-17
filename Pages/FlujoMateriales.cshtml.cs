@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace EconomiaCircular.Pages
 {
-	public class SectoresModel : PageModel
+	public class FlujoMaterialesModel : PageModel
 	{
 		public void OnGet()
 		{
